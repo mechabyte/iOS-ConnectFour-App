@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
@@ -32,13 +33,13 @@ class ViewController: UIViewController {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches as? Set<UITouch> {
+            /* Define piece properties and initialize */
             let circleCenter = touch.first!.locationInView(view)
             let viewWidth = self.view.frame.size.width
             let viewHeight = self.view.frame.size.height
             let pieceWidth = CGFloat( ((viewWidth/7) < (viewHeight/6)) ? (viewWidth/6) : (viewHeight/7) )
             let circleWidth = pieceWidth
             let circleHeight = circleWidth
-            
             let piece = Piece(frame: CGRectMake(circleCenter.x - (circleWidth/2), -circleHeight, circleWidth, circleHeight), pieceColor: (self.turn % 2 == 0) ? UIColor.yellowColor() : UIColor.redColor())
             /* Increase turns */
             self.turn++

@@ -11,6 +11,7 @@
 		2A356CD61BA67B5000151679 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A356CD51BA67B5000151679 /* RealmSwift.framework */; };
 		2A356CD81BA67B5400151679 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A356CD71BA67B5400151679 /* Realm.framework */; };
 		2A356CDE1BA68A1800151679 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A356CDD1BA68A1800151679 /* Realm.swift */; settings = {ASSET_TAGS = (); }; };
+		2A356CE01BA72AA600151679 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A356CDF1BA72AA600151679 /* Board.swift */; settings = {ASSET_TAGS = (); }; };
 		2A6622D01BA6502A00CDDB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6622CF1BA6502A00CDDB1E /* AppDelegate.swift */; };
 		2A6622D21BA6502A00CDDB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6622D11BA6502A00CDDB1E /* ViewController.swift */; };
 		2A6622D51BA6502A00CDDB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6622D31BA6502A00CDDB1E /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		2A356CD51BA67B5000151679 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
 		2A356CD71BA67B5400151679 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm.framework"; sourceTree = "<group>"; };
 		2A356CDD1BA68A1800151679 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		2A356CDF1BA72AA600151679 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		2A6622CC1BA6502A00CDDB1E /* ConnectFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6622CF1BA6502A00CDDB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6622D11BA6502A00CDDB1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				2A6622D81BA6502A00CDDB1E /* LaunchScreen.storyboard */,
 				2A6622DB1BA6502A00CDDB1E /* Info.plist */,
 				2AB543891BA67387004888D2 /* Game.swift */,
+				2A356CDF1BA72AA600151679 /* Board.swift */,
 				2A356CDD1BA68A1800151679 /* Realm.swift */,
 			);
 			path = ConnectFour;
@@ -241,6 +244,7 @@
 			files = (
 				2A6622D21BA6502A00CDDB1E /* ViewController.swift in Sources */,
 				2A356CD41BA67B1200151679 /* Piece.swift in Sources */,
+				2A356CE01BA72AA600151679 /* Board.swift in Sources */,
 				2A6622D01BA6502A00CDDB1E /* AppDelegate.swift in Sources */,
 				2A356CDE1BA68A1800151679 /* Realm.swift in Sources */,
 				2AB5438A1BA67387004888D2 /* Game.swift in Sources */,
