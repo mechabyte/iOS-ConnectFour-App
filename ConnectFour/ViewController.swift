@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -23,6 +24,24 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches as? Set<UITouch> {
+            let circleCenter = touch.first!.locationInView(view)
+            let viewWidth = self.view.frame.size.width
+            let viewHeight = self.view.frame.size.height
+            
+            
+            let pieceWidth = CGFloat( ((viewWidth/7) < (viewHeight/6)) ? (viewWidth/6) : (viewHeight/7) )
+            
+            let circleWidth = pieceWidth
+            let circleHeight = circleWidth
+            
+            let circleView = PieceController(frame: CGRectMake(circleCenter.x, circleCenter.y, circleWidth, circleHeight))
+            
+            view.addSubview(circleView)
+        }
     }
 
 }

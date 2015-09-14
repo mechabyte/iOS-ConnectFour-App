@@ -13,6 +13,8 @@
 		2A6622D71BA6502A00CDDB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6622D61BA6502A00CDDB1E /* Assets.xcassets */; };
 		2A6622DA1BA6502A00CDDB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6622D81BA6502A00CDDB1E /* LaunchScreen.storyboard */; };
 		2A68E9AA1BA6556800C59923 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A68E9A91BA6556800C59923 /* pop.framework */; };
+		2AB543801BA659B2004888D2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5437F1BA659B2004888D2 /* Board.swift */; settings = {ASSET_TAGS = (); }; };
+		2AB543861BA65AD1004888D2 /* PieceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB543851BA65AD1004888D2 /* PieceController.swift */; settings = {ASSET_TAGS = (); }; };
 		C3E0DB20F0A015302F8551AB /* Pods_ConnectFour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115658D703A1542E3D90A48E /* Pods_ConnectFour.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		2A68E9A61BA6550800C59923 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		2A68E9A71BA6556300C59923 /* POP_MCAnimate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = POP_MCAnimate.framework; path = "Pods/../build/Debug-iphoneos/POP_MCAnimate.framework"; sourceTree = "<group>"; };
 		2A68E9A91BA6556800C59923 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "Pods/../build/Debug-iphoneos/pop.framework"; sourceTree = "<group>"; };
+		2AB5437F1BA659B2004888D2 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		2AB543851BA65AD1004888D2 /* PieceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieceController.swift; path = ../PieceController.swift; sourceTree = "<group>"; };
 		916730249B38FD03C22AD47A /* Pods-ConnectFour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectFour.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectFour/Pods-ConnectFour.release.xcconfig"; sourceTree = "<group>"; };
 		A17EC2E26E251EB72E763EC0 /* Pods-ConnectFour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectFour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectFour/Pods-ConnectFour.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +70,10 @@
 		2A6622CE1BA6502A00CDDB1E /* ConnectFour */ = {
 			isa = PBXGroup;
 			children = (
+				2AB543851BA65AD1004888D2 /* PieceController.swift */,
 				2A6622CF1BA6502A00CDDB1E /* AppDelegate.swift */,
 				2A6622D11BA6502A00CDDB1E /* ViewController.swift */,
+				2AB5437F1BA659B2004888D2 /* Board.swift */,
 				2A68E9A61BA6550800C59923 /* Bridge.h */,
 				2A6622D31BA6502A00CDDB1E /* Main.storyboard */,
 				2A6622D61BA6502A00CDDB1E /* Assets.xcassets */,
@@ -220,6 +226,8 @@
 			files = (
 				2A6622D21BA6502A00CDDB1E /* ViewController.swift in Sources */,
 				2A6622D01BA6502A00CDDB1E /* AppDelegate.swift in Sources */,
+				2AB543861BA65AD1004888D2 /* PieceController.swift in Sources */,
+				2AB543801BA659B2004888D2 /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
