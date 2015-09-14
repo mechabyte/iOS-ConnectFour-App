@@ -4,6 +4,5 @@ use_frameworks!
 
 target 'ConnectFour' do
 	pod 'pop'
-	pod 'POP+MCAnimate', '~> 2.0'
 end
 
