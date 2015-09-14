@@ -9,20 +9,18 @@
 import Foundation
 import UIKit
 
-class BoardColumn: UIView {
+class Board {
+    init() {
+    }
+}
+
+class BoardSquare: UIView {
     
-    var squareEdge = Float
-    var drawAt = CGPoint
+    var color = UIColor()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clearColor()
-    }
-    
-    convenience init(frame: CGRect, squareEdge: Float, drawAt: CGPoint ) {
-        self.init(frame: frame)
-        self.squareEdge = squareEdge
-        self.drawAt = drawAt
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,15 +28,25 @@ class BoardColumn: UIView {
     }
     
     override func drawRect(rect: CGRect) {
+        print("Draw that bitch")
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetStrokeColorWithColor(context, UIColor.blueColor().CGColor)
         CGContextSetLineWidth(context,2.0)
-        CGContextMoveToPoint(context, self.drawAt.x, self.drawAt.y)
-        CGContextAddArc(context, (frame.size.width)/2, (frame.size.height)/2, (frame.size.width - 10)/2, 0.0, CGFloat(M_PI * 2.0), 1)
-        CGContextDrawPath(context, .FillStroke);
+        CGContextSetStrokeColorWithColor(context, UIColor.redColor().CGColor)
+        UIColor.blueColor().set()
+        CGContextDrawPath(context, CGPathDrawingMode.Fill)
     }
     
     /*
+    
+    CGContextMoveToPoint(context, 100, 100)
+    CGContextAddLineToPoint(context, 150, 150)
+    CGContextAddLineToPoint(context, 100, 200)
+    CGContextAddLineToPoint(context, 50, 150)
+    CGContextAddLineToPoint(context, 100, 100)
+    CGContextStrokePath(context)
+    
+    
+    ------------
     
     - (void)drawRect:(CGRect)rect {
     
