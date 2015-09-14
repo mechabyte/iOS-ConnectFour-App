@@ -10,19 +10,17 @@ import UIKit
 
 class Piece: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
-    
     var owner = RLMPlayer()
+    var pieceColor = UIColor()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clearColor()
+    }
+    
+    convenience init(frame: CGRect, pieceColor: UIColor) {
+        self.init(frame: frame)
+        self.pieceColor = pieceColor
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,11 +29,8 @@ class Piece: UIView {
 
     override func drawRect(rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetLineWidth(context,1)
-        
-        CGContextSetFillColorWithColor(context, UIColor.redColor().CGColor)
-        
-        UIColor.redColor().set()
+        CGContextSetLineWidth(context,0)
+        CGContextSetFillColorWithColor(context, self.pieceColor.CGColor)
         CGContextAddArc(context, (frame.size.width)/2, (frame.size.height)/2, (frame.size.width - 10)/2, 0.0, CGFloat(M_PI * 2.0), 1)
         CGContextDrawPath(context, .FillStroke);
     }

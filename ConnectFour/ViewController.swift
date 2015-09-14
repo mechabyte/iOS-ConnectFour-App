@@ -13,6 +13,7 @@ import RealmSwift
 class ViewController: UIViewController {
     
     var game = Game()
+    var turn = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +35,23 @@ class ViewController: UIViewController {
             let circleCenter = touch.first!.locationInView(view)
             let viewWidth = self.view.frame.size.width
             let viewHeight = self.view.frame.size.height
-            
-            
             let pieceWidth = CGFloat( ((viewWidth/7) < (viewHeight/6)) ? (viewWidth/6) : (viewHeight/7) )
-            
             let circleWidth = pieceWidth
             let circleHeight = circleWidth
             
-            let piece = Piece(frame: CGRectMake(circleCenter.x, circleCenter.y, circleWidth, circleHeight))
-            
+            let piece = Piece(frame: CGRectMake(circleCenter.x - (circleWidth/2), -circleHeight, circleWidth, circleHeight), pieceColor: (self.turn % 2 == 0) ? UIColor.yellowColor() : UIColor.redColor())
+            /* Increase turns */
+            self.turn++
+            /* Add piece view to superview */
             view.addSubview(piece)
+            /* Animate bounce into board */
+            let translate = POPSpringAnimation(propertyNamed: kPOPLayerTranslationY)
+            translate.toValue = circleCenter.y + (circleHeight/2)
+            translate.springBounciness = 3.0
+            translate.springSpeed = CGFloat(1)
+            translate.velocity = NSNumber(int: 3)
+            piece.layer.pop_addAnimation(translate, forKey: "dropPiece")
+            
         }
     }
 
