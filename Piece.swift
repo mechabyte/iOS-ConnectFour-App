@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PieceController: UIView {
+class Piece: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -17,6 +17,8 @@ class PieceController: UIView {
         // Drawing code
     }
     */
+    
+    var owner = String()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

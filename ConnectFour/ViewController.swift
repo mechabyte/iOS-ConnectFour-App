@@ -11,6 +11,8 @@ import pop
 
 class ViewController: UIViewController {
     
+    var game = Game()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,9 +40,9 @@ class ViewController: UIViewController {
             let circleWidth = pieceWidth
             let circleHeight = circleWidth
             
-            let circleView = PieceController(frame: CGRectMake(circleCenter.x, circleCenter.y, circleWidth, circleHeight))
+            let piece = Piece(frame: CGRectMake(circleCenter.x, circleCenter.y, circleWidth, circleHeight))
             
-            view.addSubview(circleView)
+            view.addSubview(piece)
         }
     }
 
