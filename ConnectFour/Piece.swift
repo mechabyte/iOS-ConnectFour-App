@@ -18,7 +18,7 @@ class Piece: UIView {
     }
     */
     
-    var owner = String()
+    var owner = RLMPlayer()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,10 +37,11 @@ class Piece: UIView {
         
         UIColor.redColor().set()
         CGContextAddArc(context, (frame.size.width)/2, (frame.size.height)/2, (frame.size.width - 10)/2, 0.0, CGFloat(M_PI * 2.0), 1)
-        
         CGContextDrawPath(context, .FillStroke);
-        
-        
+    }
+    
+    func declareOwner(player: RLMPlayer) {
+        self.owner = player
     }
     
 }
