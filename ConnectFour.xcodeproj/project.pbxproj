@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A356CD41BA67B1200151679 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A356CD31BA67B1200151679 /* Piece.swift */; settings = {ASSET_TAGS = (); }; };
+		2A356CD61BA67B5000151679 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A356CD51BA67B5000151679 /* RealmSwift.framework */; };
+		2A356CD81BA67B5400151679 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A356CD71BA67B5400151679 /* Realm.framework */; };
 		2A6622D01BA6502A00CDDB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6622CF1BA6502A00CDDB1E /* AppDelegate.swift */; };
 		2A6622D21BA6502A00CDDB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6622D11BA6502A00CDDB1E /* ViewController.swift */; };
 		2A6622D51BA6502A00CDDB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6622D31BA6502A00CDDB1E /* Main.storyboard */; };
 		2A6622D71BA6502A00CDDB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6622D61BA6502A00CDDB1E /* Assets.xcassets */; };
 		2A6622DA1BA6502A00CDDB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6622D81BA6502A00CDDB1E /* LaunchScreen.storyboard */; };
-		2AB543861BA65AD1004888D2 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB543851BA65AD1004888D2 /* Piece.swift */; settings = {ASSET_TAGS = (); }; };
 		2AB5438A1BA67387004888D2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB543891BA67387004888D2 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
 		2AB5438C1BA676CD004888D2 /* Pods_ConnectFour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5438B1BA676CD004888D2 /* Pods_ConnectFour.framework */; };
 		2AB5438E1BA676D1004888D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5438D1BA676D1004888D2 /* pop.framework */; };
@@ -20,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		115658D703A1542E3D90A48E /* Pods_ConnectFour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectFour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A356CD31BA67B1200151679 /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		2A356CD51BA67B5000151679 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
+		2A356CD71BA67B5400151679 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm.framework"; sourceTree = "<group>"; };
 		2A6622CC1BA6502A00CDDB1E /* ConnectFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6622CF1BA6502A00CDDB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6622D11BA6502A00CDDB1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +35,6 @@
 		2A68E9A61BA6550800C59923 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		2A68E9A71BA6556300C59923 /* POP_MCAnimate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = POP_MCAnimate.framework; path = "Pods/../build/Debug-iphoneos/POP_MCAnimate.framework"; sourceTree = "<group>"; };
 		2A68E9A91BA6556800C59923 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "Pods/../build/Debug-iphoneos/pop.framework"; sourceTree = "<group>"; };
-		2AB543851BA65AD1004888D2 /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Piece.swift; path = ../Piece.swift; sourceTree = "<group>"; };
 		2AB543891BA67387004888D2 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2AB5438B1BA676CD004888D2 /* Pods_ConnectFour.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ConnectFour.framework; path = "Pods/../build/Debug-iphoneos/Pods_ConnectFour.framework"; sourceTree = "<group>"; };
 		2AB5438D1BA676D1004888D2 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "Pods/../build/Debug-iphoneos/pop.framework"; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A356CD81BA67B5400151679 /* Realm.framework in Frameworks */,
+				2A356CD61BA67B5000151679 /* RealmSwift.framework in Frameworks */,
 				2AB5438E1BA676D1004888D2 /* pop.framework in Frameworks */,
 				2AB5438C1BA676CD004888D2 /* Pods_ConnectFour.framework in Frameworks */,
 			);
@@ -72,7 +78,7 @@
 		2A6622CE1BA6502A00CDDB1E /* ConnectFour */ = {
 			isa = PBXGroup;
 			children = (
-				2AB543851BA65AD1004888D2 /* Piece.swift */,
+				2A356CD31BA67B1200151679 /* Piece.swift */,
 				2A6622CF1BA6502A00CDDB1E /* AppDelegate.swift */,
 				2A6622D11BA6502A00CDDB1E /* ViewController.swift */,
 				2A68E9A61BA6550800C59923 /* Bridge.h */,
@@ -88,6 +94,8 @@
 		EC9D54249E5D196A4C3DD163 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A356CD71BA67B5400151679 /* Realm.framework */,
+				2A356CD51BA67B5000151679 /* RealmSwift.framework */,
 				2AB5438D1BA676D1004888D2 /* pop.framework */,
 				2AB5438B1BA676CD004888D2 /* Pods_ConnectFour.framework */,
 				2A68E9A91BA6556800C59923 /* pop.framework */,
@@ -229,8 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6622D21BA6502A00CDDB1E /* ViewController.swift in Sources */,
+				2A356CD41BA67B1200151679 /* Piece.swift in Sources */,
 				2A6622D01BA6502A00CDDB1E /* AppDelegate.swift in Sources */,
-				2AB543861BA65AD1004888D2 /* Piece.swift in Sources */,
 				2AB5438A1BA67387004888D2 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
