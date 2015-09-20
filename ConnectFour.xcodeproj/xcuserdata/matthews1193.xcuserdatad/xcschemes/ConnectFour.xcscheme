@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9564E727E5288BF38C1CDA3418E81F5E"
+               BlueprintIdentifier = "66C9FA8D28670ECFD71C2912DC4CC7FF"
                BuildableName = "Realm.framework"
                BlueprintName = "Realm"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E3D647978DD58D0801CA562F094C8879"
+               BlueprintIdentifier = "F9362615D907D97E620AC5910EA9A429"
                BuildableName = "Pods_ConnectFour.framework"
                BlueprintName = "Pods-ConnectFour"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -74,6 +74,20 @@
                BuildableName = "ConnectFour.app"
                BlueprintName = "ConnectFour"
                ReferencedContainer = "container:ConnectFour.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8D42E533A3E5913DE31461F43E614B67"
+               BuildableName = "SwiftColor.framework"
+               BlueprintName = "SwiftColor"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

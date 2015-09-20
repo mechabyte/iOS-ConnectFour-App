@@ -20,6 +20,7 @@
 		2AB5438A1BA67387004888D2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB543891BA67387004888D2 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
 		2AB5438C1BA676CD004888D2 /* Pods_ConnectFour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5438B1BA676CD004888D2 /* Pods_ConnectFour.framework */; };
 		2AB5438E1BA676D1004888D2 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5438D1BA676D1004888D2 /* pop.framework */; };
+		2AD69A781BA77E06005AC905 /* SwiftColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD69A771BA77E06005AC905 /* SwiftColor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		2AB543891BA67387004888D2 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2AB5438B1BA676CD004888D2 /* Pods_ConnectFour.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ConnectFour.framework; path = "Pods/../build/Debug-iphoneos/Pods_ConnectFour.framework"; sourceTree = "<group>"; };
 		2AB5438D1BA676D1004888D2 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "Pods/../build/Debug-iphoneos/pop.framework"; sourceTree = "<group>"; };
+		2ACF1E611BA77C8600D985C6 /* SwiftColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftColor.framework; path = "Pods/../build/Debug-iphoneos/SwiftColor.framework"; sourceTree = "<group>"; };
+		2AD69A771BA77E06005AC905 /* SwiftColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftColor.framework; path = "Pods/../build/Debug-iphoneos/SwiftColor.framework"; sourceTree = "<group>"; };
 		916730249B38FD03C22AD47A /* Pods-ConnectFour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectFour.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectFour/Pods-ConnectFour.release.xcconfig"; sourceTree = "<group>"; };
 		A17EC2E26E251EB72E763EC0 /* Pods-ConnectFour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectFour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectFour/Pods-ConnectFour.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD69A781BA77E06005AC905 /* SwiftColor.framework in Frameworks */,
 				2A356CD81BA67B5400151679 /* Realm.framework in Frameworks */,
 				2A356CD61BA67B5000151679 /* RealmSwift.framework in Frameworks */,
 				2AB5438E1BA676D1004888D2 /* pop.framework in Frameworks */,
@@ -100,6 +104,8 @@
 		EC9D54249E5D196A4C3DD163 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AD69A771BA77E06005AC905 /* SwiftColor.framework */,
+				2ACF1E611BA77C8600D985C6 /* SwiftColor.framework */,
 				2A356CD71BA67B5400151679 /* Realm.framework */,
 				2A356CD51BA67B5000151679 /* RealmSwift.framework */,
 				2AB5438D1BA676D1004888D2 /* pop.framework */,
